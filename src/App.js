@@ -1,24 +1,27 @@
 import React from "react";
+import ToDoList from "./components/ToDoList";
+import styled from "styled-components";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StyledForm className="App">
+      <ToDoList />
+    </StyledForm>
   );
 }
+
+const StyledForm = styled.div`
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+
+  .App-link {
+    color: #61dafb;
+  }
+`;
 
 export default App;
