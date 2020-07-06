@@ -5,14 +5,14 @@ import "./App.css";
 
 function App() {
   return (
-    <StyledForm className="App">
+    <StyledApp className="App">
       <ToDoList />
-    </StyledForm>
+    </StyledApp>
   );
 }
 
-const StyledForm = styled.div`
-  background-color: #282c34;
+const StyledApp = styled.div`
+  background-color: #1d1d1d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
